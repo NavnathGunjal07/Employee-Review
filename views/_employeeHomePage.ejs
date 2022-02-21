@@ -1,0 +1,14 @@
+<div id="caption-employes-view">
+    <h3>List of Employees requiring Feedback</h3>
+    <span class="badge badge-primary badge-pill bg-primary text-white"> Total assigned Reviews <%=assignedWorks.length %> </span>
+</div>
+<ul class="list-group list-group-flush">
+    <% for(let assigned of assignedWorks) { %> 
+    <li class="list-group-item"  style="margin-bottom:2%;">
+        <div style="display: inline-block;width:40%;margin-left:5%;"><span ><%=assigned.name%>  </span></div>
+        <div  style="display: inline-block;width:50%;">
+            <a href="/users/addReview/<%=assigned.uId %>"> <button type="button" style="margin-left:2%;" class="btn btn-primary">Add Review</button></a>
+        </div>
+    </li>
+   <% } %> 
+</ul>

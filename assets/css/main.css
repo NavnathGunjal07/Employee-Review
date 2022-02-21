@@ -1,0 +1,47 @@
+#add-new-employee{
+    width:70%;
+    display:none;
+}
+
+#update-employee{
+    width:70%;
+    margin-top:2%;
+    /* position:fixed; */
+    /* display:none; */
+}
+
+#add-new-performance-review{
+        margin: auto;
+        width: 70%;
+        margin-top:10%;
+        border: 3px solid green;
+        padding: 10px;
+}
+#viewAllReviews{
+    margin: auto;
+        width: 35%;
+        margin-top:10%;
+        padding: 1%;
+        padding-left: 1.5%;
+}
+#assign-to-review{
+    margin: auto;
+        width: 35%;
+        margin-top:10%;
+        padding: 1%;
+        padding-left: 1.5%;
+}
+
+#viewAllReviews th,tr td {
+    padding: 10px;
+    border: 1px solid black;
+ }
+ #viewAllReviews th{
+     padding-left:50px;
+     padding-right:50px;
+ }
+
+ #viewAllReviews td{
+    padding-left:50px;
+    padding-right:50px;
+}

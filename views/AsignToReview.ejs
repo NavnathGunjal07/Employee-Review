@@ -1,0 +1,13 @@
+<div id="assign-to-review">
+    <h3><strong>Assign <%=userUpdate.name  %> To Review </strong></h3>
+    <ul class="list-group list-group-flush">
+        <% for(let u of users){ %> 
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div style="display: inline-block;width:60%;margin-left:5%;"><span ><%=u.name%>  </span></div>
+            <div  style="display: inline-block;">
+            <a href="/users/assignReview/<%=u.id %>"> <button type="button"  class="btn btn-primary">Assign</button></a>
+            </div>
+         </li>
+        <% } %> 
+      </ul>
+</div>

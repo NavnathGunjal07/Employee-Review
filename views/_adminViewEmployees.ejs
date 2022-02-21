@@ -1,0 +1,51 @@
+<a href="#"> <button id = "add-new-employee-btn" type="button" style="margin-left:75%; margin-bottom:2%;" class="btn btn-primary">Add Employee</button></a>
+           <form id = "add-new-employee-form"class="mx-1 mx-md-4" action="/users/create" method="post">
+            <div class="d-flex flex-row align-items-center mb-4">
+              <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+              <div class="form-outline flex-fill mb-0">
+                <input type="text" name= "name" id="form3Example1c" class="form-control" required/>
+                <label class="form-label" for="form3Example1c">Employee Name</label>
+              </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center mb-4">
+              <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+              <div class="form-outline flex-fill mb-0">
+                <input type="email" name ="email" id="form3Example3c" class="form-control" required/>
+                <label class="form-label" for="form3Example3c">Employee Email</label>
+              </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center mb-4">
+              <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+              <div class="form-outline flex-fill mb-0">
+                <input type="password" name = "password" id="form3Example4c" class="form-control" required/>
+                <label class="form-label" for="form3Example4c">Enter Password</label>
+              </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center mb-4">
+              <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+              <div class="form-outline flex-fill mb-0">
+                <input type="password" name = "confirm_password" id="form3Example4cd" class="form-control" required/>
+                <label class="form-label" for="form3Example4cd">Repeat Employee password</label>
+              </div>
+            </div>
+          
+            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+              <button id="add-new-employee-submit-btn" type="submit" class="btn btn-primary btn-lg">Add Employee</button>
+            </div>
+
+          </form>
+            <ul class="list-group list-group-flush">
+                <% for(let user of users) { %> 
+                <li class="list-group-item"  style="margin-bottom:2%;">
+                    <div style="display: inline-block;width:40%;margin-left:5%;"><span ><%=user.name%>  </span></div>
+                    <div  style="display: inline-block;width:50%;">
+                        <a href="/users/updatePage/<%=user.id %>"> <button type="button" class="btn btn-secondary">Update</button></a> 
+                    <a href="/users/makeAdmin/<%=user.id %>"> <button style="margin-left:2%;" type="button" class="btn btn-warning">Make Admin</button></a>
+                    <a href="/users/destroy/<%=user.id %>"><button style="margin-left:2%;" type="button" class="btn btn-danger">Delete</button></a>
+                    </div>
+                </li>
+               <% } %> 
+            </ul>

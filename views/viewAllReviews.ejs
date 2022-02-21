@@ -1,0 +1,12 @@
+<div id="viewAllReviews">
+    <table>
+        <th>Employee Name</th>
+        <th>Review Given</th>
+        <% for(let review of userUpdate.performanceReview) {%> 
+        <tr>
+            <td><%=review.name  %> </td>
+            <td><%=review.review %></td>
+         </tr>
+         <% } %> 
+    </table>
+</div>

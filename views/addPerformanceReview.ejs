@@ -1,0 +1,13 @@
+<div id="add-new-performance-review" class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">You are going to give review to <h4><%=userUpdate.name  %></h4> </h5>
+      <h6 class="card-subtitle mb-2 text-muted">Add review below</h6>
+      <form action="/users/addNewPerformanceReview/<%=userUpdate.id  %>" method="post">
+        <div class="form-group">
+          <input  style="margin-bottom:10%;" type="text" name ="review" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add Review">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Review</button>
+         
+    </div>
+</form>  
+  </div>

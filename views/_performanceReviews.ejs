@@ -1,0 +1,16 @@
+
+<ul style = "margin-top:5%;"class="list-group">
+    <% for(let user of users) { %> 
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div style="display: inline-block;width:30%;margin-left:5%;"><span ><%=user.name%>  </span></div>
+        <div  style="display: inline-block;width:80%;">
+        <span class="badge badge-primary badge-pill bg-primary text-white"> Total Reviews <%=user.performanceReview.length %> </span>
+        <a href="/users/addReview/<%=user.id %>"> <button type="button" style="margin-left:2%;" class="btn btn-primary">Add Review</button></a>
+        <a href="/users/viewAllReviewsPage/<%=user.id %>"> <button style="margin-left:2%;" type="button" class="btn btn-warning">View All Reviews</button></a>
+        <a href="/users/assignToReviewPage/<%=user.id %>"> <button style="margin-left:2%;"type="button" class="btn btn-info">Assign to review</button> </a>
+      
+        </div>
+     
+    </li>
+    <% } %> 
+  </ul>
