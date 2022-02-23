@@ -79,14 +79,16 @@ You project will be running on port--> 7000
 - Add/update/view performance review in admin view
 - Give review to another employees
 
-
-
-## Demo
-
-Insert gif or link to demo
-
-
 ## Screenshots
+- Sign In Page
+    -![Screenshot (114)](https://user-images.githubusercontent.com/53387548/155275182-e0195efa-d29f-4741-bf82-41af4c570c75.png)
+- Admin View Performance Section
+    - ![Screenshot (112)](https://user-images.githubusercontent.com/53387548/155275264-344361ea-1e02-4226-ace7-2168c9b24419.png)
+- Admin view Employees section
+    - ![Screenshot (111)](https://user-images.githubusercontent.com/53387548/155275307-3a6da76e-5135-4e9d-ae5d-517b5a49646f.png)
+- Employees view
+    - ![Screenshot (113)](https://user-images.githubusercontent.com/53387548/155275346-09e4fbec-bd3f-47d4-a912-8f3aea5331f6.png)
+
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherinempeterson.com/)
